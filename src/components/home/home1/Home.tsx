@@ -1,8 +1,11 @@
+import Container from '@/components/shared/Container';
 import React from 'react';
 
 const Home = () => {
     return (
-      <div className=" font-[family-name:var(--plusjakart)] ">home1</div>
+      <Container className=' px-10 ' >
+        <div className=" plusJakartaSans  ">home1</div>
+      </Container>
     );
 };
 

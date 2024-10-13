@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Plus_Jakarta_Sans   } from "@next/font/google";
+import { Plus_Jakarta_Sans, Libre_Franklin  } from "@next/font/google";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -10,11 +10,13 @@ const geistSans = localFont({
 });
 
 
-// const plusJakartaSans = Plus_Jakarta_Sans({
-//   weight: ["200", "400", "700"], // You can specify multiple weights
-//   subsets: ["latin"], // Specify the subsets you need
-//   variable: "--plusjakart", // CSS variable name
-// });
+const libreFranklin = Libre_Franklin({
+  weight: ["200", "400", "700"], // You can specify multiple weights
+  subsets: ["latin"], // Specify the subsets you need
+  variable: "--font-libreFranklin", // CSS variable name
+});
+// use the class name - font-[family-name:var(--font-libreFranklin)]
+
 const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["200", "400", "700"], // You can specify multiple weights
   subsets: ["latin"], // Specify the subsets you need
@@ -34,7 +36,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${plusJakartaSans.variable} antialiased`}>
+      <body
+        className={` ${plusJakartaSans.variable} ${libreFranklin.className}   antialiased`}
+      >
         {children}
       </body>
     </html>
