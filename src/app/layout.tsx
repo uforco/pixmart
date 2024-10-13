@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Plus_Jakarta_Sans   } from "@next/font/google";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -7,11 +8,19 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+
+// const plusJakartaSans = Plus_Jakarta_Sans({
+//   weight: ["200", "400", "700"], // You can specify multiple weights
+//   subsets: ["latin"], // Specify the subsets you need
+//   variable: "--plusjakart", // CSS variable name
+// });
+const plusJakartaSans = Plus_Jakarta_Sans({
+  weight: ["200", "400", "700"], // You can specify multiple weights
+  subsets: ["latin"], // Specify the subsets you need
+  variable: "--plusjakart", // CSS variable name
 });
+// use the class name - font-[family-name:var(--plusjakarta)]
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={` ${plusJakartaSans.variable} antialiased`}>
         {children}
       </body>
     </html>
