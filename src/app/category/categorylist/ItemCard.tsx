@@ -6,7 +6,7 @@ import { plusJakartaSans } from '@/app/layout';
 const ItemCard = () => {
     return (
       <div
-        className={` flex flex-col w-full h-[388px] overflow-hidden $${plusJakartaSans.className} border-gray-700 `}
+        className={` flex flex-col h-[388px] w-[320px] overflow-hidden $${plusJakartaSans.className} border-gray-700 `}
       >
         <div className=" w-full h-[260px] bg-gray-300 rounded-[20px]">
           {/* <Image src={''} alt={''}></Image> */}

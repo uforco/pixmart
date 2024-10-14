@@ -2,6 +2,7 @@ import React from "react";
 import HeadingPrimary from "@/components/shared/headline/HeadingPrimary";
 import Categorylist from "./categorylist/Categorylist";
 import Container from "@/components/shared/Container";
+import FilterSection from "./filtersec/FilterSection";
 
 const page = () => {
   return (
@@ -15,10 +16,14 @@ const page = () => {
         </Container>
       </div>
       <Container>
-        <div className="w-full flex ">
-          <div className="w-64"></div>
-          <div className="w-full">
-            <Categorylist></Categorylist>
+        <div className=" w-full " >
+          <div className="w-full flex ">
+            <div className="w-[265px] flex justify-start ">
+              <FilterSection></FilterSection>
+            </div>
+            <div className="">
+              <Categorylist></Categorylist>
+            </div>
           </div>
         </div>
       </Container>
