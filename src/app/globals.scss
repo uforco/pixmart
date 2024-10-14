@@ -1,0 +1,22 @@
+$primaryColor: #0F73F6;
+$secondaryColor: #F0F6FD;
+$opionalColor: #222222;
+$lightPrimaryColor: "#e9f3ff";
+
+// font family
+$plus-Jakarta-Sans: "Plus Jakarta Sans", sans-serif;
+
+:root {
+  --primarycolor: #{$primaryColor};
+  --lightprimarycolor: #{lightPrimaryColor};
+  --secondarycolor: #{$secondaryColor};
+  --opionalcolor: #{$opionalColor};
+}
+
+.plusJakartaSans{
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+// .gradient-topTobottom {
+//     background: linear-gradient($primaryColor,  )
+// }
