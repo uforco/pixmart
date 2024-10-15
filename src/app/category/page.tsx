@@ -10,14 +10,14 @@ const page = () => {
     <div>
       <div className=" h-[308px] flex items-center bg-gradient-to-b from-primaryColor/25 to-transparent ">
         <Container>
-          <HeadingPrimary className=" leading-tight text-7xl ">
+          <HeadingPrimary className=" leading-tight text-7xl  ">
             Explore Top <br />
             <span className="text-primaryColor">UI Kits</span> Design Assets
           </HeadingPrimary>
         </Container>
       </div>
       <Container>
-        <div className=" w-full ">
+        <div className=" w-full overflow-hidden ">
           <div className="w-full flex ">
             <div className="w-[265px] flex justify-start ">
               <FilterSection></FilterSection>

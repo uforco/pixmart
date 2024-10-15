@@ -2,7 +2,8 @@
 import React, { ChangeEvent, useState } from "react";
 
 const FilterItemSection = ({ filterItems }: { filterItems: string[] }) => {
-  const [catego, setCatego] = useState<string[]>([]);
+  const [catego, setCatego] = useState<string[]>(["All Categories"]);
+
   const checkfunc = (e: string) => {
     if (catego.some((item: string) => item === e)) {
       let newValue = catego.slice().filter((item: string) => item !== e);
@@ -12,8 +13,8 @@ const FilterItemSection = ({ filterItems }: { filterItems: string[] }) => {
   };
 
   function checked(event: ChangeEvent<HTMLInputElement>): boolean | void {
-    // return event.target.checked;
-    console.log(event)
+    // return item === "All Categories" ? true : false
+    // console.log(event);
   }
 
   return (
@@ -28,9 +29,9 @@ const FilterItemSection = ({ filterItems }: { filterItems: string[] }) => {
             <input
               type="checkbox"
               // value={checked}
-              defaultChecked={item === "All Categories" ? true : false}
+              // defaultChecked={item === "All Categories" ? true : false}
               checked={catego.some((vel: string) => vel === item)} 
-              onChange={() => checked}
+              onChange={checked}
               className="w-4 h-4 text-primaryColor bg-gray-100  rounded "
             ></input>
             <label

@@ -8,7 +8,7 @@ const ProductSlider = () => {
   return (
     <div className=" relative my-20 after:contents[''] after:absolute after:top-0 left-0 after:w-full after:h-full flex items-center after:bg-gradient-to-t after:from-primaryColor/20 after:from-10% after:via-transparent after:via-30% after:z-40 after:to-white after:to-95 % bg-primaryColor/10 ">
       {/* middle card */}
-      <div className=" z-50 w-[725px] h-[296px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl overflow-hidden flex justify-center items-center ">
+      <div className=" z-50 w-full md:w-[725px] h-[296px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl overflow-hidden flex justify-center items-center ">
         <div className=" text-center ">
           <h2 className=" uppercase font-light tracking-widest text-primaryColor font-[family-name:var(--font-libreFranklin)] ">
             Product

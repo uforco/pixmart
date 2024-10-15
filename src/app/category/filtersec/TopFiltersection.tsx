@@ -9,8 +9,8 @@ const TopFiltersection = () => {
           <div className=" flex justify-start items-center gap-5 ">
             <div className=" flex items-center gap-1 ">
               <Sortbtn></Sortbtn>
-              <Sortbtn></Sortbtn>
-              <Sortbtn></Sortbtn>
+              {/* <Sortbtn></Sortbtn>
+              <Sortbtn></Sortbtn> */}
             </div>
             <BestSeller></BestSeller>
           </div>
