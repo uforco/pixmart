@@ -13,6 +13,12 @@ const Categorylist = () => {
         <ItemCard></ItemCard>
         <ItemCard></ItemCard>
         <ItemCard></ItemCard>
+        <ItemCard></ItemCard>
+        <ItemCard></ItemCard>
+        <ItemCard></ItemCard>
+        <ItemCard></ItemCard>
+        <ItemCard></ItemCard>
+        <ItemCard></ItemCard>
       </div>
     );
 };
