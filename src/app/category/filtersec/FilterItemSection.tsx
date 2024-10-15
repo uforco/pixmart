@@ -12,7 +12,8 @@ const FilterItemSection = ({ filterItems }: { filterItems: string[] }) => {
   };
 
   function checked(event: ChangeEvent<HTMLInputElement>): boolean | void {
-    return event.target.checked;
+    // return event.target.checked;
+    console.log(event)
   }
 
   return (
@@ -28,7 +29,7 @@ const FilterItemSection = ({ filterItems }: { filterItems: string[] }) => {
               type="checkbox"
               // value={checked}
               defaultChecked={item === "All Categories" ? true : false}
-              checked={catego.some((vel: string) => vel === item)}
+              checked={catego.some((vel: string) => vel === item)} 
               onChange={() => checked}
               className="w-4 h-4 text-primaryColor bg-gray-100  rounded "
             ></input>

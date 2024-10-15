@@ -43,7 +43,7 @@ const FilterSection = () => {
         </HeadingPrimary>
         <FilterItemSection filterItems={categoryItems}></FilterItemSection>
       </div>
-      <div>
+      {/* <div>
         <HeadingPrimary className=" leading-tight text-2xl ">
           Format Type
         </HeadingPrimary>
@@ -60,7 +60,7 @@ const FilterSection = () => {
           Price
         </HeadingPrimary>
         <PriceFilter></PriceFilter>
-      </div>
+      </div> */}
     </div>
   );
 };
