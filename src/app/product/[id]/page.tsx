@@ -4,6 +4,7 @@ import LeftMainComtain from "./headerSection/leftSiteContainer/MainComtain";
 import RightMainComtain from "./headerSection/rightSiteContainer/MainComtain";
 import Overview from "./Articel/Overview";
 import ProductDetails from "./productDetails/ProductDetails";
+import RelatedProduct from "./RelatedProduct/RelatedProduct";
 
 const page = () => {
   return (
@@ -25,6 +26,9 @@ const page = () => {
           <div className=" w-[513px] ">
             <ProductDetails></ProductDetails>
           </div>
+        </div>
+        <div className=" w-full mb-20 ">
+          <RelatedProduct></RelatedProduct>
         </div>
       </Container>
     </div>

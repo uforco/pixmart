@@ -1,5 +1,4 @@
 import React from 'react';
-import ItemCard from './ItemCard';
 import TopFiltersection from './../filtersec/TopFiltersection';
 import ProductCard from '@/components/shared/CardBox/ProductCard';
 
