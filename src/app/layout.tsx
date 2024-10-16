@@ -23,7 +23,7 @@ export const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"], // Specify the subsets you need
   variable: "--plusjakart", // CSS variable name
 });
-// use the class name - font-[family-name:var(--plusjakarta)]
+// use the class name - font-[family-name:var(--plusjakart)]
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${plusJakartaSans.variable} ${libreFranklin.variable}   antialiased`}
+        className={` ${plusJakartaSans.variable} ${plusJakartaSans.className} ${libreFranklin.variable} ${libreFranklin.className}  antialiased`}
       >
         {children}
       </body>

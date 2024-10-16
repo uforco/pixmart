@@ -14,8 +14,13 @@ $plus-Jakarta-Sans: "Plus Jakarta Sans", sans-serif;
 }
 
 .plusJakartaSans{
-  font-family: "Plus Jakarta Sans", sans-serif !important;
+  @apply font-[family-name:var(--plusjakarta)]
 }
+.libreFranklin{
+  @apply font-[family-name:var(--font-libreFranklin)]
+}
+
+
 
 // .gradient-topTobottom {
 //     background: linear-gradient($primaryColor,  )

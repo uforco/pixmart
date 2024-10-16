@@ -22,7 +22,7 @@ const page = () => {
             <div className="w-[265px] flex justify-start ">
               <FilterSection></FilterSection>
             </div>
-            <div className="">
+            <div >
               <Categorylist></Categorylist>
             </div>
           </div>

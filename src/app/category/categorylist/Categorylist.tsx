@@ -4,7 +4,7 @@ import TopFiltersection from './../filtersec/TopFiltersection';
 
 const Categorylist = () => {
     return (
-      <div>
+      <div className=' w-full ' >
         <TopFiltersection></TopFiltersection>
         <div className=" w-full grid grid-cols-3 gap-7 ">
           <ItemCard></ItemCard>

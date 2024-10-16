@@ -1,6 +1,8 @@
 import React from 'react';
 import { TfiClose } from "react-icons/tfi";
 import BestSeller from './BestSeller';
+import { PiGridFour } from "react-icons/pi";
+import { HiOutlineBars3 } from "react-icons/hi2";
 
 const TopFiltersection = () => {
     return (
@@ -14,8 +16,17 @@ const TopFiltersection = () => {
             </div>
             <BestSeller></BestSeller>
           </div>
-
-          <div></div>
+          <div className=" flex justify-between items-center gap-3 ">
+            <p className=" text-opionalColor/50  libreFranklin ">Showing 12 out of 120 results.</p>
+            <div className=" flex items-center justify-between gap-2 ">
+              <button className=" size-12 rounded-xl text bg-primaryColor text-white flex justify-center items-center text-2xl ">
+                <PiGridFour></PiGridFour>
+              </button>
+              <button className=" size-12 text-2xl rounded-xl bg-primaryColor text-white flex justify-center items-center ">
+                <HiOutlineBars3></HiOutlineBars3>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     );
