@@ -2,6 +2,7 @@
 import React, { ChangeEvent, useState } from 'react';
 import HeadingPrimary from "@/components/shared/headline/HeadingPrimary";
 import CouponCode from './CouponCode';
+import PrimaryBtn from '@/components/shared/button/PrimaryBtn';
 
 const MemberAndPrice = ({ Regularprice }: { Regularprice: number}) => {
   const [priceOffer, setPriceOffer] = useState<boolean>(true)
@@ -38,9 +39,9 @@ const MemberAndPrice = ({ Regularprice }: { Regularprice: number}) => {
           without our membership for regular pricing in payment.
         </p>
       </div>
-      <div className=" border-b pb-5 mb-5 ">
+      <div className=" border-b pb-6 mb-6 ">
         <div
-          className={` flex justify-between items-center mt-5 ${
+          className={` flex justify-between items-center mt-5 cursor-pointer ${
             priceOffer ? "border-primaryColor " : " "
           } border rounded-lg p-1 px-3 `}
           onClick={() => seletePrice(Regularprice)}
@@ -53,7 +54,7 @@ const MemberAndPrice = ({ Regularprice }: { Regularprice: number}) => {
               className="w-4 h-4 text-primaryColor bg-gray-100 cursor-pointer rounded "
             ></input>
             <label
-              className={` libreFranklin font-bold ms-2 text-sm text-opionalColor tracking-wide`}
+              className={` libreFranklin cursor-pointer font-bold ms-2 text-sm text-opionalColor tracking-wide`}
             >
               Regular Price
             </label>
@@ -61,7 +62,7 @@ const MemberAndPrice = ({ Regularprice }: { Regularprice: number}) => {
           <p className=" libreFranklin ">${Regularprice.toFixed(2)}</p>
         </div>
         <div
-          className={` flex justify-between items-center ${
+          className={` flex justify-between items-center cursor-pointer ${
             priceOffer ? "" : " border-primaryColor "
           } border rounded-lg p-1 px-3 my-2 `}
           onClick={() => seletePrice(Membership10Off)}
@@ -74,7 +75,7 @@ const MemberAndPrice = ({ Regularprice }: { Regularprice: number}) => {
               className="w-4 h-4 text-primaryColor bg-gray-100 cursor-pointer rounded "
             ></input>
             <label
-              className={` libreFranklin font-bold ms-2 text-sm text-opionalColor tracking-wide`}
+              className={` libreFranklin cursor-pointer font-bold ms-2 text-sm text-opionalColor tracking-wide`}
             >
               Membership {"(10% Off)"}
             </label>
@@ -86,7 +87,16 @@ const MemberAndPrice = ({ Regularprice }: { Regularprice: number}) => {
           <p className=" font-bold ">${subTotal.toFixed(2)}</p>
         </div>
       </div>
-      <CouponCode></CouponCode>
+      <div className=" border-b pb-6 mb-6 ">
+        <CouponCode></CouponCode>
+      </div>
+      <div className=" flex justify-between items-center pb-6 ">
+        <p className=" text-base text-opionalColor/80 ">Total</p>
+        <p className=" font-bold ">${subTotal.toFixed(2)}</p>
+      </div>
+      <div>
+        <PrimaryBtn className=' w-full h-12 rounded-lg ' >Proceed to Checkout</PrimaryBtn>
+      </div>
     </div>
   );
 };
