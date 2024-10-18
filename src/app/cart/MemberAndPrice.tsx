@@ -7,6 +7,7 @@ import PrimaryBtn from '@/components/shared/button/PrimaryBtn';
 const MemberAndPrice = ({ Regularprice }: { Regularprice: number}) => {
   const [priceOffer, setPriceOffer] = useState<boolean>(true)
   const [subTotal, setSubTotal] = useState<number>(Regularprice);
+  const [Total, setTotal] = useState<number>(subTotal);
 
   let Membership10Off: number = Regularprice - (Regularprice / 100) * 10;
 
@@ -17,9 +18,11 @@ const MemberAndPrice = ({ Regularprice }: { Regularprice: number}) => {
     if (price.toFixed(2) === Membership10Off.toFixed(2)){
         setPriceOffer(false);
         setSubTotal(parseFloat(price.toFixed(2)));
+        setTotal(parseFloat(price.toFixed(2)));
     }else{
         setPriceOffer(true);
         setSubTotal(parseFloat(price.toFixed(2)));
+        setTotal(parseFloat(price.toFixed(2)));
     }
   }
 
@@ -88,14 +91,16 @@ const MemberAndPrice = ({ Regularprice }: { Regularprice: number}) => {
         </div>
       </div>
       <div className=" border-b pb-6 mb-6 ">
-        <CouponCode></CouponCode>
+        <CouponCode setfuncTotal={setTotal}></CouponCode>
       </div>
       <div className=" flex justify-between items-center pb-6 ">
         <p className=" text-base text-opionalColor/80 ">Total</p>
-        <p className=" font-bold ">${subTotal.toFixed(2)}</p>
+        <p className=" font-bold ">${Total.toFixed(2)}</p>
       </div>
       <div>
-        <PrimaryBtn className=' w-full h-12 rounded-lg ' >Proceed to Checkout</PrimaryBtn>
+        <PrimaryBtn className=" w-full h-12 rounded-lg ">
+          Proceed to Checkout
+        </PrimaryBtn>
       </div>
     </div>
   );
