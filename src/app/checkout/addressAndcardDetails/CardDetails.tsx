@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import HeadingPrimary from '@/components/shared/headline/HeadingPrimary';
 import Image  from 'next/image';
 import creaditcard from "@/../../public/images/crediticon.png"
@@ -6,6 +7,15 @@ import pypal from "@/../../public/images/pypal.png";
 import AppleandGooglePay from "@/../../public/images/payforAG.png";
 
 const CardDetails = () => {
+
+
+  const [cartOn, setCartOn]= useState<boolean>(false)
+
+
+  function checkeds (e: any): void {
+      setCartOn(e?.target?.checked);
+  }
+
     return (
       <div>
         <HeadingPrimary className=" plusJakartaSans text-[28px] font-bold ">
@@ -21,7 +31,7 @@ const CardDetails = () => {
                 <input
                   type="checkbox"
                   //   checked={priceOffer}
-                  //   onChange={checked}
+                  onChange={checkeds}
                   className="w-4 h-4 text-primaryColor bg-gray-100 cursor-pointer rounded "
                 ></input>
                 <label
@@ -42,7 +52,8 @@ const CardDetails = () => {
             <div>
               <div className="relative w-fill ">
                 <input
-                  type="text"
+                  disabled={!cartOn}
+                  type="number"
                   id="creditCardNumber"
                   name="creditCardNumber"
                   className={`block my-4 w-full border rounded-lg libreFranklin px-4 text-base  focus:outline-0  h-[62px]`}
@@ -60,6 +71,7 @@ const CardDetails = () => {
                   Expiration Date
                 </label>
                 <input
+                  disabled={!cartOn}
                   type="text"
                   id="expirationDate"
                   name="expirationDate"
@@ -76,6 +88,7 @@ const CardDetails = () => {
                   CVV
                 </label>
                 <input
+                  disabled={!cartOn}
                   type="number"
                   id="CVV"
                   name="CVV"
@@ -87,59 +100,48 @@ const CardDetails = () => {
             </div>
           </div>
         </div>
-        <div
-          className={` flex mt-3 justify-between items-center border cursor-pointer rounded-lg p-1 px-3 `}
-          //   onClick={() => seletePrice(Regularprice)}
-        >
-          <div className="flex items-center my-2 libreFranklin text-base ">
-            <input
-              type="checkbox"
-              name="paypal"
-              //   checked={priceOffer}
-              //   onChange={checked}
-              className="w-4 h-4 border text-primaryColor bg-gray-100 cursor-pointer rounded "
-            ></input>
-            <label
-              className={` plusJakartaSans cursor-pointer font-bold ms-2 text-[20px] text-opionalColor tracking-wide`}
-            >
-              PayPal
-            </label>
+        <div className="radioss pt-5">
+          <div className="flex items-center my-2 p-4 justify-between rounded-lg border libreFranklin text-base w-full ">
+            <div>
+              <input
+                type="radio"
+                id="AppleGooglePay"
+                name="paymentMathod"
+                value="AppleGooglePay"
+              ></input>
+              <label
+                className="plusJakartaSans text-xl font-bold  "
+                htmlFor="AppleGooglePay"
+              >
+                Apple Pay / Google Pay
+              </label>
+            </div>
+            <p className=" libreFranklin ">
+              <Image
+                src={AppleandGooglePay}
+                alt={"Apple and Google Pay"}
+              ></Image>
+            </p>
           </div>
-          <p className=" libreFranklin ">
-            <Image
-            //   width={90}
-            //   height={24}
-              src={pypal}
-              alt={"crediticon"}
-            ></Image>
-          </p>
-        </div>
-        <div
-          className={` flex mt-3 justify-between items-center border cursor-pointer rounded-lg p-1 px-3 `}
-          //   onClick={() => seletePrice(Regularprice)}
-        >
-          <div className="flex items-center my-2 libreFranklin text-base ">
-            <input
-              type="checkbox"
-              name="AppleandGooglePay"
-              //   checked={priceOffer}
-              //   onChange={checked}
-              className="w-4 h-4 border text-primaryColor bg-gray-100 cursor-pointer rounded "
-            ></input>
-            <label
-              className={` plusJakartaSans cursor-pointer font-bold ms-2 text-[20px] text-opionalColor tracking-wide`}
-            >
-              Apple Pay / Google Pay
-            </label>
+          <div className="flex items-center my-2 p-4 justify-between rounded-lg border libreFranklin text-base w-full ">
+            <div>
+              <input
+                type="radio"
+                id="paypal"
+                name="paymentMathod"
+                value="paypal"
+              ></input>
+              <label
+                className="plusJakartaSans text-xl font-bold "
+                htmlFor="paypal"
+              >
+                PayPal
+              </label>
+            </div>
+            <p className=" libreFranklin ">
+              <Image src={pypal} alt={"paypal"}></Image>
+            </p>
           </div>
-          <p className=" libreFranklin ">
-            <Image
-            //   width={90}
-            //   height={24}
-              src={AppleandGooglePay}
-              alt={"Apple and Google Pay"}
-            ></Image>
-          </p>
         </div>
       </div>
     );

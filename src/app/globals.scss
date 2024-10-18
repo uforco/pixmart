@@ -55,3 +55,36 @@ $plus-Jakarta-Sans: "Plus Jakarta Sans", sans-serif;
     // }
 }
 
+
+.radioss {
+     input[type="radio"] {
+      display: none;
+    }
+
+    label {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    label::before {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #ccc;
+      // border-color: rgba(15, 115, 246, 0.5);
+      background-color: rgba(15, 115, 246, 0.1);
+      border-radius: 4px;
+      margin-right: 10px;
+      vertical-align: middle;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="radio"]:checked + label::before {
+      background-color: $primaryColor;
+      border-color: $primaryColor;
+    }
+
+}

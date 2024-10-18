@@ -3,7 +3,7 @@ import HeadingPrimary from '../../headline/HeadingPrimary';
 
 const CheckOutCard = ({ data, inx }: { data: any, inx: number }) => {
   return (
-    <div className={inx === 0? "" :` border-t my-4 pt-4 `}>
+    <div className={inx === 0? "" :` border-t my-5 pt-5 `}>
       <div className=" flex items-center justify-between overflow-hidden ">
         <div className=" w-[119px] h-[104px] rounded-lg bg-gray-300 "></div>
         <div className=" flex flex-col justify-between h-full w-[306px] gap-5 overflow-hidden ">

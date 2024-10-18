@@ -1,7 +1,7 @@
 import Container from '@/components/shared/Container';
 import HeadingPrimary from '@/components/shared/headline/HeadingPrimary';
 import React from 'react';
-import CheckoutForm from './addressAndcardDetails/CheckoutForm';
+import CheckoutForm from './CheckoutForm';
 
 const page = () => {
     return (
