@@ -19,10 +19,10 @@ const RelatedProduct = () => {
           </div>
         </div>
         <div className=' grid grid-cols-4 gap-2 ' >
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
+          <ProductCard className=" w-[302px] " ></ProductCard>
+          <ProductCard className=" w-[302px] " ></ProductCard>
+          <ProductCard className=" w-[302px] " ></ProductCard>
+          <ProductCard className=" w-[302px] " ></ProductCard>
         </div>
       </div>
     );

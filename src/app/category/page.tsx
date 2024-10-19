@@ -3,7 +3,7 @@ import HeadingPrimary from "@/components/shared/headline/HeadingPrimary";
 import Categorylist from "./categorylist/Categorylist";
 import Container from "@/components/shared/Container";
 import FilterSection from "./filtersec/FilterSection";
-import ProductSlider from './productSlider/ProductSlider';
+import ProductSlider from '@/components/shared/productMarqueeSlider/ProductMarqueeSlider';
 
 const page = () => {
   return (

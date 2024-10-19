@@ -1,14 +1,12 @@
 import React from "react";
 import { MdOutlineShoppingBag } from "react-icons/md";
-import Image from "next/image";
-import { plusJakartaSans } from "@/app/layout";
 import Link from "next/link";
 
-const ProductCard = () => {
+const ProductCard = ({className: classname}: {className?: string}) => {
   return (
     <Link href={"/product/756"}>
       <div
-        className={` flex flex-col h-[388px] w-[320px] overflow-hidden $${plusJakartaSans.className} border-gray-700 `}
+        className={` flex flex-col h-[388px] ${classname} overflow-hidden plusJakartaSans border-gray-700 `}
       >
         <div className=" w-full h-[260px] bg-gray-300 rounded-[20px]">
           {/* <Image src={''} alt={''}></Image> */}
@@ -21,7 +19,7 @@ const ProductCard = () => {
           <div className=" flex justify-between items-center pt-3 ">
             <div>
               <p
-                className={` text-opionalColor font-bold text-xl text-left ${plusJakartaSans.className}`}
+                className={` text-opionalColor font-bold text-xl text-left plusJakartaSans`}
               >
                 $11.00
               </p>

@@ -4,7 +4,7 @@ import HeadingPrimary from "@/components/shared/headline/HeadingPrimary";
 import React, { useState } from "react";
 import MarqueeSlider from "./MarqueeSlider";
 
-const ProductSlider = () => {
+const ProductMarqueeSlider = () => {
   return (
     <div className=" relative my-20 after:contents[''] after:absolute after:top-0 left-0 after:w-full after:h-full flex items-center after:bg-gradient-to-t after:from-primaryColor/20 after:from-10% after:via-transparent after:via-30% after:z-40 after:to-white after:to-95 % bg-primaryColor/10 ">
       {/* middle card */}
@@ -32,4 +32,4 @@ const ProductSlider = () => {
   );
 };
 
-export default ProductSlider;
+export default ProductMarqueeSlider;

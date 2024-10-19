@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import { Plus_Jakarta_Sans, Libre_Franklin  } from "@next/font/google";
 import "./globals.css";
 import "./globals.scss"
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
 
 
 const libreFranklin = Libre_Franklin({
@@ -18,7 +12,7 @@ const libreFranklin = Libre_Franklin({
 });
 // use the class name - font-[family-name:var(--font-libreFranklin)]
 
-export const plusJakartaSans = Plus_Jakarta_Sans({
+const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["200", "400", "700"], // You can specify multiple weights
   subsets: ["latin"], // Specify the subsets you need
   variable: "--plusjakart", // CSS variable name

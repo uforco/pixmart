@@ -1,0 +1,94 @@
+ /* Basic styling for the select element */
+    select {
+      width: 100%;
+    //   padding: 10px;
+    //   font-size: 16px;
+    //   border: 2px solid #ccc;
+    //   border-radius: 5px;
+      background-color: transparent !important ;
+      appearance: none; /* Hides the default dropdown arrow */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      cursor: pointer;
+    //   background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"><polygon points="70,90 100,50 40,50" style="fill:%23333;"/></svg>');
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 12px;
+    }
+
+    select:focus {
+    //   border-color: #4CAF50;
+      outline: none;
+    }
+
+    /* Custom dropdown options */
+    select option {
+      padding: 20px !important ;
+      margin: 0px 8px !important;
+    }
+
+
+
+
+
+  /* optional selector */
+
+
+
+  .custom-select {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+}
+
+.select-selected {
+  background-color: #f0f0f0;
+  border: 2px solid #007bff;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.select-selected:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  border: 6px solid transparent;
+  border-color: black transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent black transparent;
+  top: 10px;
+}
+
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.select-items div {
+  color: #333;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.select-items div:hover {
+  background-color: #f1f1f1;
+}
+
+.select-hide {
+  display: none;
+}
+

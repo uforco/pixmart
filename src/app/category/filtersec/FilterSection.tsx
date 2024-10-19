@@ -1,9 +1,8 @@
-import { plusJakartaSans } from "@/app/layout";
+
 import HeadingPrimary from "@/components/shared/headline/HeadingPrimary";
 import React from "react";
 import FilterItemSection from "./FilterItemSection";
 import PriceFilter from './../pricefilter/PriceFilter';
-// className={plusJakartaSans.className}
 
 const FilterSection = () => {
   const categoryItems = [

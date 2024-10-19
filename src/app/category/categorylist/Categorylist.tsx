@@ -7,21 +7,21 @@ const Categorylist = () => {
       <div className=' w-full ' >
         <TopFiltersection></TopFiltersection>
         <div className=" w-full grid grid-cols-3 gap-7 ">
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
+          <ProductCard className=' w-[320px] ' ></ProductCard>
         </div>
       </div>
     );
