@@ -12,7 +12,7 @@ const page = () => {
         <div className=" bg-gradient-to-b from-primaryColor/15 to-transparent ">
           <Container>
             <div className=" py-16  flex flex-col gap-2 justify-center items-start w-full ">
-              <p className=" uppercase px-5 py-1 libreFranklin text-base mb-6 text-white flex justify-center items-center rounded-full font-bold plusJakartaSans h-6 bg-primaryColor ">
+              <p className=" uppercase px-5 py-1 libreFranklin font-normal text-base mb-6 text-white flex justify-center items-center rounded-full plusJakartaSans h-6 bg-primaryColor ">
                 TYPOGRAPHY
               </p>
               <HeadingPrimary className=" plusJakartaSans leading-tight text-6xl  ">
