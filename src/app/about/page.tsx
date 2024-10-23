@@ -4,10 +4,13 @@ import React from 'react';
 import AboutMarquee from './marqueeSliderabout/AboutMarquee';
 import AboutInfo from './aboutInfo/AboutInfo';
 import Milestonea from './milestonea/Milestonea';
+import Team from './team/Team';
+import Awards from './awards/Awards';
+import Values from './values/Values';
 
 const page = () => {
     return (
-      <div className=" pb-10 aboutsection ">
+      <div className="aboutsection ">
         <div className=" pb-10 bg-gradient-to-b from-primaryColor/10 to-gray-50 ">
           <Container>
             <div className=" flex flex-col gap-2 justify-center items-center ">
@@ -26,6 +29,9 @@ const page = () => {
         </div>
         <AboutInfo></AboutInfo>
         <Milestonea></Milestonea>
+        <Values></Values>
+        <Team></Team>
+        <Awards></Awards>
       </div>
     );
 };
