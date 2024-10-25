@@ -4,6 +4,8 @@ import HeadingPrimary from "@/components/shared/headline/HeadingPrimary";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import PrimaryBtn from "@/components/shared/button/PrimaryBtn";
+import { GoTrophy } from "react-icons/go";
+
 
 const HeadLine = () => {
   return (
@@ -25,16 +27,14 @@ const HeadLine = () => {
 };
 
 const TrendingProducts = () => {
-
-
   return (
     <div>
       <Container>
         <div className=" flex justify-between  my-[120px] ">
           {/* left site section  */}
-          <div className=" w-[840px] ">
+          <div className=" w-[840px] overflow-hidden ">
             <HeadLine></HeadLine>
-            <div className=" grid grid-cols-2 ">
+            <div className=" grid grid-cols-2 gap-10 ">
               <TopSellProductCard></TopSellProductCard>
               <TopSellProductCard></TopSellProductCard>
               <TopSellProductCard></TopSellProductCard>
@@ -66,9 +66,21 @@ export default TrendingProducts;
 
 const TopSellProductCard = () => {
   return (
-    <div className=" w-full border flex justify-center ">
-      <div>
-        <h2>TopSellProductCard</h2>
+    <div className=" w-full flex justify-center ">
+      <div className=" w-[400px] h-[412px] ">
+        <div className=" relative h-[328px] w-full bg-gray-200 overflow-hidden rounded-[20px] ">
+          <div className=" absolute rounded-bl-2xl top-0 right-0 flex justify-center items-center p-4 text-2xl bg-primaryColor text-white " >
+            <GoTrophy></GoTrophy>
+          </div>
+          {/* images */}
+        </div>
+        <div className=" mt-4 " >
+          <div className=" flex justify-between items-center " >
+            <HeadingPrimary className=" text-[28px] " >Biztar</HeadingPrimary>
+            <span className=" text-primaryColor font-bold " >$8.00</span>
+          </div>
+          <p className=" text-opionalColor/70 " >Business Consultant - UI Kits</p>
+        </div>
       </div>
     </div>
   );
