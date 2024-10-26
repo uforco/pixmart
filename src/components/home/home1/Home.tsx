@@ -5,6 +5,7 @@ import DigitalAssets from './digitalAssets/DigitalAssets';
 import TrendingProducts from './trendingProducts/TrendingProducts';
 import DigitalCollections from './digitalCollections/DigitalCollections';
 import LatestProducts from './latestProducts/LatestProducts';
+import WeAnswersQuestions from './weAnswersQuestions/WeAnswersQuestions';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
         <TrendingProducts></TrendingProducts>
         <DigitalCollections></DigitalCollections>
         <LatestProducts></LatestProducts>
+        <WeAnswersQuestions></WeAnswersQuestions>
       </div> 
     );
 };
