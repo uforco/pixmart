@@ -2,13 +2,14 @@ import React from "react";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import Link from "next/link";
 
-const ProductCard = ({className: classname}: {className?: string}) => {
+const ProductCard = ({className: classname, imageSize}: {className?: string, imageSize?: string}) => {
   return (
-    <Link href={"/product/756"}>
+    <div className=" flex justify-center " >
+      <Link href={"/product/756"}>
       <div
         className={` flex flex-col h-[388px] ${classname} overflow-hidden plusJakartaSans border-gray-700 `}
       >
-        <div className=" w-full h-[260px] bg-gray-300 rounded-[20px]">
+        <div className={` ${imageSize} w-full h-[260px] bg-gray-300 rounded-[20px]`}>
           {/* <Image src={''} alt={''}></Image> */}
         </div>
         <div className=" pt-4 ">
@@ -33,6 +34,7 @@ const ProductCard = ({className: classname}: {className?: string}) => {
         </div>
       </div>
     </Link>
+    </div>
   );
 };
 
