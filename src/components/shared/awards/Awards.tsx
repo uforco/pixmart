@@ -2,11 +2,12 @@ import React from 'react';
 import Container from '@/components/shared/Container';
 import HeadingPrimary from '@/components/shared/headline/HeadingPrimary';
 import { PiFlowerLotusLight } from "react-icons/pi";
-const Awards = () => {
+
+const Awards = ({className: classname}: {className?: string}) => {
     return (
       <div className=' bg-white ' >
         <Container>
-          <div className=" flex justify-between my-[120px] ">
+          <div className={` ${classname} flex justify-between my-[120px] `}>
             <div className=" w-2/5 flex justify-start items-center ">
               <div className=" w-[466px]  mb-12 ">
                 <h1 className=" text-primaryColor tracking-widest ">AWARDS</h1>

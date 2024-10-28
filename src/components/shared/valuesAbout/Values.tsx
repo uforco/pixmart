@@ -6,11 +6,11 @@ import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { IoRocketOutline } from "react-icons/io5";
 import { GrShieldSecurity } from "react-icons/gr";
 
-const Values = () => {
+const Values = ({className: classname, valueClass}: {className?: string, valueClass?: string}) => {
     return (
       <div>
         <Container>
-          <div className=" flex justify-between my-[120px] ">
+          <div className={`${classname} flex justify-between my-[120px] `}>
             <div className=" w-1/2 relative ">
               <div className=" w-[594px] flex flex-col gap-5 ">
                 <div className=" w-full h-[106px] p-6 bg-white z-30 rounded-lg shadow-xl shadow-slate-200/50 flex gap-6 items-center ">
@@ -69,7 +69,7 @@ const Values = () => {
               </div>
               <div className="radiabg absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  h-[190%] rounded-full w-[80%]  "></div>
             </div>
-            <div className=" w-1/2 flex justify-end items-center ">
+            <div className={` ${valueClass} w-1/2 flex  items-center  `}>
               <div>
                 <h2 className=" text-primaryColor libreFranklin mb-3 ">
                   VALUES
@@ -84,7 +84,7 @@ const Values = () => {
               </div>
             </div>
           </div>
-        </Container>
+        </Container>   
       </div>
     );
 };

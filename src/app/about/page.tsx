@@ -5,14 +5,14 @@ import AboutMarquee from "./marqueeSliderabout/AboutMarquee";
 import AboutInfo from "./aboutInfo/AboutInfo";
 import Milestonea from "./milestonea/Milestonea";
 import Team from "./team/Team";
-import Awards from "./awards/Awards";
-import Values from "./values/Values";
+import Values from "@/components/shared/valuesAbout/Values";
 import DigitalCreative from "@/components/shared/digitalcreative/DigitalCreative";
+import Awards from "@/components/shared/awards/Awards";
 
 const page = () => {
   return (
     <div className="aboutsection ">
-      <div className=" pb-10 bg-gradient-to-b from-primaryColor/10 to-gray-50 ">
+      <div className=" py-10 pt-14 bg-gradient-to-b from-primaryColor/10 to-gray-50 ">
         <Container>
           <div className=" flex flex-col gap-2 justify-center items-center ">
             <p className=" uppercase text-primaryColor font-bold plusJakartaSans ">
@@ -30,7 +30,7 @@ const page = () => {
       </div>
       <AboutInfo></AboutInfo>
       <Milestonea></Milestonea>
-      <Values></Values>
+      <Values valueClass="justify-end" ></Values>
       <Team></Team>
       <Awards></Awards>
       <div className=" border border-transparent " >

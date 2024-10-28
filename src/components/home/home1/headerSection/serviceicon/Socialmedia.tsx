@@ -1,14 +1,14 @@
 import React from "react";
 import ConterDomSvg from "./ConterDomSvg";
 
-const Socialmedia = () => {
+const Socialmedia = ({iconSize}: {iconSize?: string | number}) => {
   return (
     <ConterDomSvg>
       <svg
         version="1.1"
         viewBox="0 0 2048 2048"
-        width="128"
-        height="128"
+        width={iconSize? iconSize : "128"}
+        height={iconSize? iconSize : "128"}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path

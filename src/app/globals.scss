@@ -90,13 +90,6 @@ $plus-Jakarta-Sans: "Plus Jakarta Sans", sans-serif;
 }
 
 
-
-.aboutsection {
-  .milestonea{
-    
-  }
-}
-
 .radiabg{
       background: rgb(36,88,251);
       background: radial-gradient(circle, rgba(36, 90, 251, 0.2) 0%, rgba(36, 90, 251, 0.02) 45%, rgba(36, 90, 251, 0.01) 70%, rgba(36, 90, 251, 0.000) 95%);
@@ -105,4 +98,9 @@ $plus-Jakarta-Sans: "Plus Jakarta Sans", sans-serif;
 .radialgradientBgDip{
   background: rgb(36,88,251);
   background: radial-gradient(circle, rgba(36, 90, 251, 0.242) 20%, rgba(36, 90, 251, 0.06) 50%, rgba(36, 90, 251, 0.02) 60%, rgba(36, 90, 251, 0) 80%);
+}
+
+.linearToBgradientBg{
+  background: rgb(255, 255, 255);
+  background: linear-gradient(to top, rgba(255, 0, 0, 0.137) 5%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 70%, rgba(255, 0, 0, 0.137) 95%);
 }
