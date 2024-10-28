@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Libre_Franklin  } from "@next/font/google";
 import "./globals.css";
 import "./globals.scss"
+import NavberSection from "@/components/shared/NavberSection/NavberSection";
 
 
 const libreFranklin = Libre_Franklin({
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body
         className={` ${plusJakartaSans.variable} ${plusJakartaSans.className} ${libreFranklin.variable} ${libreFranklin.className}  antialiased`}
       >
+        <NavberSection></NavberSection>
         {children}
       </body>
     </html>

@@ -6,6 +6,8 @@ import TrendingProducts from './trendingProducts/TrendingProducts';
 import DigitalCollections from './digitalCollections/DigitalCollections';
 import LatestProducts from './latestProducts/LatestProducts';
 import WeAnswersQuestions from './weAnswersQuestions/WeAnswersQuestions';
+import DigitalCreative from '@/components/shared/digitalcreative/DigitalCreative';
+import ExpertDesignInsights from './latestExpertDesignInsights/ExpertDesignInsights';
 
 const Home = () => {
     return (
@@ -14,8 +16,10 @@ const Home = () => {
         <DigitalAssets></DigitalAssets>
         <TrendingProducts></TrendingProducts>
         <DigitalCollections></DigitalCollections>
-        <LatestProducts></LatestProducts>
+        <LatestProducts></LatestProducts> 
         <WeAnswersQuestions></WeAnswersQuestions>
+        <DigitalCreative></DigitalCreative>
+        <ExpertDesignInsights></ExpertDesignInsights>
       </div> 
     );
 };

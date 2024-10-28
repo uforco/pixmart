@@ -10,7 +10,7 @@ import ServiceIcon from './serviceicon/ServiceIcon';
 
 const Header = () => {
   return (
-    <div className=" pb-10 w-full bg-gradient-to-b from-primaryColor/20 via-gray-200/40 to-transparent ">
+    <div className=" pb-10 w-full bg-gradient-to-b from-primaryColor/20 via-gray-200/40 to-transparent pt-20 ">
       <div>
         <Container>
           <div className=" flex justify-center ">

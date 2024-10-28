@@ -7,7 +7,7 @@ import Milestonea from "./milestonea/Milestonea";
 import Team from "./team/Team";
 import Awards from "./awards/Awards";
 import Values from "./values/Values";
-import DigitalCreative from './digitalcreative/DigitalCreative';
+import DigitalCreative from "@/components/shared/digitalcreative/DigitalCreative";
 
 const page = () => {
   return (

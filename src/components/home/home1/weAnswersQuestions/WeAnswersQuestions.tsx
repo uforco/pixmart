@@ -5,17 +5,17 @@ import Collapse from "./Collapse";
 
 const WeAnswersQuestions = () => {
   return (
-    <div>
+    <div >
       <Container>
-        <div className=" relative overflow-hidden  ">
-          <div className=" z-50 overflow-hidden bg-transparent ">
+        <div className=" relative  mb-[70px] ">
+          <div className=" z-50  bg-transparent ">
             <div className=" flex justify-center mb-12 bg-transparent ">
               <HeadingPrimary className=" text-5xl font-bold w-full  bg-transparent sm:w-[540px] text-center leading-tight ">
                 We Have Answers to All of Your Questions
               </HeadingPrimary>
             </div>
-            <div className=" w-full flex justify-center relative  ">
-              <div className=" radialgradientBgDip -z-10 w-[900px] h-[600px] rounded-full absolute top-2/4 -translate-y-2/4 left-1/2 -translate-x-1/2 "></div>
+            <div className=" w-full flex justify-center relative  pb-[40px]  ">
+              
 
               <div className=" flex flex-col gap-4 ">
                 <Collapse HeadLine={"Can I request a refund?"}>
@@ -72,6 +72,7 @@ const WeAnswersQuestions = () => {
               </div>
             </div>
           </div>
+          <div className=" radialgradientBgDip -z-10 w-[700px] h-[700px] rounded-full absolute top-[60%] -translate-y-2/4 left-1/2 -translate-x-1/2 "></div>
         </div>
       </Container>
     </div>
