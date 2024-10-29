@@ -3,6 +3,7 @@ import Container from '@/components/shared/Container';
 import HeadingPrimary from '@/components/shared/headline/HeadingPrimary';
 import { AiOutlineShopping } from "react-icons/ai"
 import SearchBox from './SearchBox';
+import Link from 'next/link';
 const NavberSection = () => {
     return (
         <div className=' py-6 shadow-lg shadow-secondaryColor/5 bg-secondaryColor ' >
@@ -14,11 +15,11 @@ const NavberSection = () => {
                         </HeadingPrimary>
                         <div>
                             <ul className=' flex justify-between items-center gap-12 '  >
-                                <li>About</li>
-                                <li>Products</li>
-                                <li>Creators</li>
-                                <li>Blog</li>
-                                <li>Contact</li>
+                                <li className=' hover:text-primaryColor cursor-pointer ' > <Link href={"/about"} > About </Link> </li>
+                                <li className=' hover:text-primaryColor cursor-pointer ' > <Link href={"/category"} > Products </Link> </li>
+                                <li className=' hover:text-primaryColor cursor-pointer ' > <Link href={"/creator"} > Creators </Link> </li>
+                                <li className=' hover:text-primaryColor cursor-pointer ' > <Link href={"blog"} > Blog </Link> </li>
+                                <li className=' hover:text-primaryColor cursor-pointer ' > <Link href={"/"} > Contact </Link> </li>
                             </ul>
                         </div>
                     </div>

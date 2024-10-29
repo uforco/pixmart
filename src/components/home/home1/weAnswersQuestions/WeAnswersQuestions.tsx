@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "@/components/shared/Container";
 import HeadingPrimary from "@/components/shared/headline/HeadingPrimary";
-import Collapse from "./Collapse";
+import Collapse from "../../../shared/collapse/Collapse";
 
 const WeAnswersQuestions = () => {
   return (

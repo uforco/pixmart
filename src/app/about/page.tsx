@@ -12,7 +12,7 @@ import Awards from "@/components/shared/awards/Awards";
 const page = () => {
   return (
     <div className="aboutsection ">
-      <div className=" py-10 pt-14 bg-gradient-to-b from-primaryColor/10 to-gray-50 ">
+      <div className=" py-10 pt-14 bg-gradient-to-b from-primaryColor/10 to-white ">
         <Container>
           <div className=" flex flex-col gap-2 justify-center items-center ">
             <p className=" uppercase text-primaryColor font-bold plusJakartaSans ">
