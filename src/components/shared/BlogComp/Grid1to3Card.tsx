@@ -11,15 +11,15 @@ const Grid1to3Card = () => {
                 <div className="  col-span-7  row-span-12">
                   <BlogCard
                     badgePosition=" right-3 top-3  "
-                    className=" bg-white  w-full h-[750px] p-[8px] shadow-none "
-                    imageSize=" h-[640px] "
+                    className=" bg-white  w-full h-[780px] p-[8px] shadow-none "
+                    imageSize=" h-[680px] "
                     headlineStyles=" text-[28px] "
                   ></BlogCard>
                 </div> 
-                <div className="  col-span-5 row-span-6 ">
+                <div className="  col-span-5 row-span-6  ">
                   <BlogCard
                     badgePosition=" right-3 top-3  "
-                    className=" bg-white w-full h-[359px] p-[8px] shadow-none  "
+                    className=" bg-white w-full h-[395px] p-[8px] shadow-none  "
                     imageSize=" h-[270px]"
                     headlineStyles=" text-[20px] mt-3 "
                   ></BlogCard>
@@ -27,7 +27,7 @@ const Grid1to3Card = () => {
                 <div className="  col-span-5 row-span-6 ">
                   <BlogCard
                     badgePosition=" right-3 top-3  "
-                    className=" bg-white w-full h-[369px] p-[8px] shadow-none "
+                    className=" bg-white w-full h-[395px] p-[8px] shadow-none "
                     imageSize=" h-[270px]"
                     headlineStyles=" text-[20px] mt-3 "
                   ></BlogCard>
