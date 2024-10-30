@@ -44,7 +44,7 @@ const TestimonCard = ({nextSlide, prevSlide}: {nextSlide: any, prevSlide: any}) 
             allowed me to create stunning visuals that captivate my audience
             every time. Highly recommended for any creatives looking to elevate
             their work.
-          </p>
+          </p> 
           <div className=" flex justify-between items-end ">
             <div className=" flex gap-3 items-center ">
               <div className=" w-16 h-16 rounded-full bg-gray-200 "></div>
