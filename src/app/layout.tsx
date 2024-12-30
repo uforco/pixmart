@@ -11,8 +11,6 @@ const libreFranklin = Libre_Franklin({
   subsets: ["latin"], // Specify the subsets you need
   variable: "--font-libreFranklin", // CSS variable name
 });
-// use the class name - font-[family-name:var(--font-libreFranklin)]
-
 const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["200", "400", "700"], // You can specify multiple weights
   subsets: ["latin"], // Specify the subsets you need
